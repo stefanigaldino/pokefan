@@ -17,7 +17,7 @@
       </ul>
     </div>    
   </div>
-  <div>
+  <div row>
     <button type="button" class="btn btn-light btn2">
       <a href="https://www.linkedin.com/in/stefanigaldino/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </button>
@@ -45,15 +45,13 @@
   }
 
   .imgAsh {
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  position: fixed;
+  left: 80%;
+  top: 70%;
   transform: translate(-50%, -50%);
-  height: 200px;
-  width: 200px;
-  z-index: 1; /* Ajuste conforme necessário */
+  height: 10vw;
+  width: 10vw; 
+  z-index: 1;
 }
-
-
 
 </style>

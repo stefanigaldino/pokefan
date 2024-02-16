@@ -1,29 +1,14 @@
-# pokefan
+# Pokefan Project
 
-This template should help get you started developing with Vue 3 in Vite.
+## Objective
+This project was developed for educational purposes, aiming to practice Vue 3 development using Vite and consuming the PokeAPI. ✌️
 
-## Recommended IDE Setup
+![Logo do Pokefan](./assets/pokefan.png)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Customize configuration
+## How to Run the Project
+Follow these steps:
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/stefanigaldino/pokefan

@@ -6,7 +6,7 @@ const pokemon = defineProps(["name", "urlBaseSvg"])
 <template>
     <div class="col-4 col-md-6 col-xl-3">
         <div class="card p-2 mb-3 cardListPokemon">
-            <p class="text-center">{{ pokemon.name.toUpperCase() }}</p>
+            <p class="text-center" style="font-size: x-small;">{{ pokemon.name.toUpperCase() }}</p>
             <img 
             :src="urlBaseSvg" class="card-img-top" 
             alt="..."

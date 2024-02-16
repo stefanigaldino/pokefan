@@ -100,6 +100,18 @@ const selectPokemon = async (pokemon) => {
   overflow-y: scroll;
   overflow-x: hidden;
 }
+::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background:#2b1468;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #e73760;
+        border-radius: 30px;
+    }
 
 @media (max-width: 768px) {
   .card-list{
