@@ -40,6 +40,7 @@ const selectPokemon = async (pokemon) => {
 
 <template>
   <main>
+      <!-- StefaniGaldino -->
     <div class="container text-body-secondary">
       
       <div class="row mt-4">

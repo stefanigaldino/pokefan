@@ -2,6 +2,7 @@
 </script>
 
 <template>
+  <!-- StefaniGaldino -->
   <nav class="navbar navbar-expand-md navbar-dark navbar">
     <div class="container-fluid">
       <router-link class="navbar-brand" to="/">
@@ -17,7 +18,7 @@
             <router-link class="nav-link" to="/home">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/about">Sobre</router-link>
+            <router-link class="nav-link" to="/sobre">Sobre</router-link>
           </li>
         </ul>
       </div>

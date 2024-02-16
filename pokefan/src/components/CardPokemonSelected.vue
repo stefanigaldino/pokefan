@@ -23,6 +23,7 @@ const pokemon = defineProps(["name", "xp", "id", "height", "img", "loading", "we
         >
 
         <div class="card-body">
+              <!-- StefaniGaldino -->
             <h5 class="card-title text-center">{{ pokemon.name ? pokemon.name.toUpperCase() : '???' }}</h5>
             <hr>
             <div class="row">
