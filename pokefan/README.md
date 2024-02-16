@@ -14,21 +14,18 @@ Follow these steps:
    ```bash
    git clone https://github.com/stefanigaldino/pokefan
 
-Navigate to the project directory:
+2. Navigate to the project directory:
+   ```bash
+   cd pokefan
 
-bash
-Copy code
-cd pokefan
-Install dependencies:
+3. Install dependencies:
+   ```bash
+   npm install
 
-bash
-Copy code
-npm install
-Start the development server:
+4. Start the development server:
+   ```bash
+   npm run dev
 
-bash
-Copy code
-npm run dev
 After these steps, the project will likely be running at http://localhost:5173/. Make any necessary adjustments according to your local configuration.
 
 Feel free to explore the project and learn more about Vue 3, Vite, and the PokeAPI! 👾
