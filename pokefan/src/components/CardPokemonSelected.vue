@@ -6,27 +6,26 @@ const pokemon = defineProps(["name", "xp", "id", "height", "img", "loading", "we
 
 <template>
     <div 
-    class="card cardPokemonSelected"
+    class="card CardPokemonSelected"
     :class="loading ? '' : 'animate__animated animate__flipInY'"
     >
+        <img 
+        v-if="pokemon.name"
+        :src="pokemon.img" 
+        class="card-img-top pt-2"
+        :alt="pokemon.name"
+        >
+        <img 
+        v-else
+        src="../assets/egg_pokemon.svg"
+        class="card-img-top pt-2"
+        alt="???"
+        >
 
-    <img 
-    v-if="pokemon.name"    
-    :src="`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg`"  
-    height="250"
-    class="card-img-top pd-4"
-    :alt="pokemon.name">
-        
-    <img 
-    v-else
-    src="../assets/egg_pokemon.svg"
-        height="200"
-        class="card-img-top pd-2"
-        :alt="'???'">
-  <div class="card-body">
-    <h5 class="card-title text-center">{{ pokemon.name ? pokemon.name.toUpperCase() : '???' }}</h5>
-      <hr />
-    <div class="row">
+        <div class="card-body">
+            <h5 class="card-title text-center">{{ pokemon.name ? pokemon.name.toUpperCase() : '???' }}</h5>
+            <hr>
+            <div class="row">
         <section class="col">
             <strong>Id: </strong>
             <span>{{pokemon.id}}</span>
@@ -55,18 +54,30 @@ const pokemon = defineProps(["name", "xp", "id", "height", "img", "loading", "we
             <span>{{pokemon.moves}}</span>
         </section>        
     </div>
-    
-  </div>
-</div>
-
+           
+        </div>
+    </div>
 </template>
 
-<style scoped>
 
-.cardPokemonSelected {
+<style scoped>
+.CardPokemonSelected{
     height: 75vh;
-    background: rgb(7, 60, 89);
-    background: radial-gradient(circle, rgb(102, 212, 224) 0%, rgba(180, 96, 219, 0.397) 100%);
+    background: rgb(72,63,251);
+    background: radial-gradient(circle, rgba(239, 88, 159, 0.8) 0%, rgba(27, 97, 196, 0.8) 100%);
+}
+.CardPokemonSelected img{
+    height: 250px;
 }
 
+@media (max-width: 768px) {
+    .CardPokemonSelected{
+        height: 30vh;
+        width: 50%;
+        margin: 0 auto 10px auto;
+    }
+    .CardPokemonSelected img{
+        height: 100px;
+    }
+}
 </style>
